@@ -1,0 +1,17 @@
+name=封筒（長形７号）
+cardSize=futo
+sizex=
+zipx=159
+zipy=38
+zippadding1=27
+zippadding2=27
+zipfont=ＭＳ　ゴシック
+zipfontsize=20
+addx=330
+addy=80
+addfont=Meiryo UI
+addfontsize=12
+namex=210
+namey=100
+namefont=Meiryo UI
+namefontsize=12

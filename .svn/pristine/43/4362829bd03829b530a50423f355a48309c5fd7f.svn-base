@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81C23E85-9A7B-47A2-A06C-C97A6EEB165B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tosen2</RootNamespace>
+    <AssemblyName>tosen2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>daruma.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addInfoMember.cs" />
+    <Compile Include="addMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addMember.designer.cs">
+      <DependentUpon>addMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addMember2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addMember2.Designer.cs">
+      <DependentUpon>addMember2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addMember3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addMember3.Designer.cs">
+      <DependentUpon>addMember3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basicInfo.cs" />
+    <Compile Include="chgMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chgMember.Designer.cs">
+      <DependentUpon>chgMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cominfo.cs" />
+    <Compile Include="comInfoInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comInfoInput.Designer.cs">
+      <DependentUpon>comInfoInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comInput.Designer.cs">
+      <DependentUpon>comInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comSrch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comSrch.Designer.cs">
+      <DependentUpon>comSrch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comTableDAO.cs" />
+    <Compile Include="confirmAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirmAdd.Designer.cs">
+      <DependentUpon>confirmAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataEdit.Designer.cs">
+      <DependentUpon>dataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataEditMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataEditMenu.Designer.cs">
+      <DependentUpon>dataEditMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbAccDAO.cs" />
+    <Compile Include="dbClass.cs" />
+    <Compile Include="delMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delMember.Designer.cs">
+      <DependentUpon>delMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dspBaseInfo.cs" />
+    <Compile Include="dspMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dspMember.Designer.cs">
+      <DependentUpon>dspMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="famiAddr.cs" />
+    <Compile Include="famiAddrDAO.cs" />
+    <Compile Include="famiInfoBeen.cs" />
+    <Compile Include="famiInfoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="famiInfoView.Designer.cs">
+      <DependentUpon>famiInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamiryInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamiryInputForm.Designer.cs">
+      <DependentUpon>FamiryInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="famiryInputForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="famiryInputForm2.Designer.cs">
+      <DependentUpon>famiryInputForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpAddChg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpAddChg.Designer.cs">
+      <DependentUpon>grpAddChg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grpDspSrch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grpDspSrch.Designer.cs">
+      <DependentUpon>grpDspSrch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hagakiPrn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hagakiPrn.Designer.cs">
+      <DependentUpon>hagakiPrn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="initConf.cs" />
+    <Compile Include="jarnalPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jarnalPrintForm.Designer.cs">
+      <DependentUpon>jarnalPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kindInfoDTO.cs" />
+    <Compile Include="memberInfoBeen.cs" />
+    <Compile Include="memDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memDeleteForm.Designer.cs">
+      <DependentUpon>memDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mFamiAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mFamiAdd.Designer.cs">
+      <DependentUpon>mFamiAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pInfoAllBeen.cs" />
+    <Compile Include="printAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printAll.Designer.cs">
+      <DependentUpon>printAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printInfoBeen.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prtDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prtDialog.Designer.cs">
+      <DependentUpon>prtDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prtDialog2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prtDialog2.Designer.cs">
+      <DependentUpon>prtDialog2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="srchChgMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="srchChgMember.Designer.cs">
+      <DependentUpon>srchChgMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tosen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tosen.Designer.cs">
+      <DependentUpon>tosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baseAddrDAO.cs" />
+    <Compile Include="uInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uInfo.Designer.cs">
+      <DependentUpon>uInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateMember.Designer.cs">
+      <DependentUpon>updateMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userChangeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userChangeInfo.Designer.cs">
+      <DependentUpon>userChangeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrInfoChg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usrInfoChg.Designer.cs">
+      <DependentUpon>usrInfoChg.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addMember.resx">
+      <DependentUpon>addMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addMember2.resx">
+      <DependentUpon>addMember2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addMember3.resx">
+      <DependentUpon>addMember3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chgMember.resx">
+      <DependentUpon>chgMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="comInfoInput.resx">
+      <DependentUpon>comInfoInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="comInput.resx">
+      <DependentUpon>comInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="comSrch.resx">
+      <DependentUpon>comSrch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="confirmAdd.resx">
+      <DependentUpon>confirmAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dataEdit.resx">
+      <DependentUpon>dataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dataEditMenu.resx">
+      <DependentUpon>dataEditMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delMember.resx">
+      <DependentUpon>delMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dspMember.resx">
+      <DependentUpon>dspMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="famiInfoView.resx">
+      <DependentUpon>famiInfoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamiryInputForm.resx">
+      <DependentUpon>FamiryInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="famiryInputForm2.resx">
+      <DependentUpon>famiryInputForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpAddChg.resx">
+      <DependentUpon>grpAddChg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grpDspSrch.resx">
+      <DependentUpon>grpDspSrch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hagakiPrn.resx">
+      <DependentUpon>hagakiPrn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jarnalPrintForm.resx">
+      <DependentUpon>jarnalPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memDeleteForm.resx">
+      <DependentUpon>memDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mFamiAdd.resx">
+      <DependentUpon>mFamiAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printAll.resx">
+      <DependentUpon>printAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="prtDialog.resx">
+      <DependentUpon>prtDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prtDialog2.resx">
+      <DependentUpon>prtDialog2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="srchChgMember.resx">
+      <DependentUpon>srchChgMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tosen.resx">
+      <DependentUpon>tosen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uInfo.resx">
+      <DependentUpon>uInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateMember.resx">
+      <DependentUpon>updateMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrInfoChg.resx">
+      <DependentUpon>usrInfoChg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="daruma.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
