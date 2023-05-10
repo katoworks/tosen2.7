@@ -143,7 +143,7 @@
             // nameRubi
             // 
             this.nameRubi.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.nameRubi.ImeMode = System.Windows.Forms.ImeMode.Katakana;
+            this.nameRubi.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
             this.nameRubi.Location = new System.Drawing.Point(208, 50);
             this.nameRubi.Name = "nameRubi";
             this.nameRubi.Size = new System.Drawing.Size(197, 28);

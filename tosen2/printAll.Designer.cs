@@ -213,7 +213,7 @@
             // 
             // searchName
             // 
-            this.searchName.ImeMode = System.Windows.Forms.ImeMode.Katakana;
+            this.searchName.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
             this.searchName.Location = new System.Drawing.Point(13, 157);
             this.searchName.Name = "searchName";
             this.searchName.Size = new System.Drawing.Size(457, 28);
